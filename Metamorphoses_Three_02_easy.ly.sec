@@ -1,0 +1,365 @@
+APnovoiceAA = \relative c'{
+    \set Staff.instrumentName = #"Piano"
+    \set Staff.shortInstrumentName = #"Pno."
+    \clef treble
+    %staffkeysig
+    \key c \major 
+    \repeat volta 2 { 
+    %bartimesig: 
+    \time 6/8 
+    \tempo "Moderately fast  = 132" 8 = 132  
+    r2.      | % 1
+    r2.      | % 2
+    r2.      | % 3
+    r2.      | % 4
+    \clef "bass_8"
+    <d,,, d'>2.~      | % 5
+    <d d'>2.~      | % 6
+    <d d'>2. } % end of repeat (both)
+    \repeat volta 2 { % bothrep 
+     | % 7
+    r2.      | % 8
+    \clef treble
+    <d''' f a>4. \mf <d f a>4.      | % 9
+    <d f a>4. <d f a>4.      | % 10
+    <cis f a>4. <cis f a>4.      | % 11
+    <cis f a>4. <cis f a>4.      | % 12
+    <d g bes>4. <d g bes>4.      | % 13
+    <d g bes>4. <d g bes>4.      | % 14
+    <ees g bes>4. <ees g bes>4.      | % 15
+    <ees g bes>4. <ees g bes>4.      | % 16
+    <c e g>4. <c e g>4.      | % 17
+    <c e g>4. <c e g>4.      | % 18
+    <cis e a>4. <cis e a>4.      | % 19
+    <cis e g>4. <cis e g>4.      | % 20
+    <d f a>4. <d f a>4.      | % 21
+    <d f a>4. <d f a>4.      | % 22
+    <d f a>4. <d f a>4. } % end of repeat (both)
+    \repeat volta 2 { % bothrep 
+    \repeat volta 2 { %startrep 
+     | % 23
+    <d f a>4. <d f a>4.      | % 24
+    r2.      | % 25
+    r2.      | % 26
+    r2.      | % 27
+    r2.      | % 28
+    \clef "bass_8"
+    <d,,, d'>2.~ } % end of repeat except alternate endings
+    \alternative{ {       | % 29
+    <d d'>2.~ } %close alt1
+     | % 30
+    <d d'>2.     {          | % 31
+    r2. } } %close alternatives
+     | % 32
+    \clef "bass_8"
+    <d d'>2. 
+    \bar "||"    \repeat volta 2 { %startrep 
+     | % 33
+    r2.      | % 34
+    \clef treble
+    %barkeysig: 
+    \key d \major 
+    <fis''' a d>4. \mf <fis a d>4.      | % 35
+    <fis a d>4. <fis a d>4.      | % 36
+    <fis ais cis>4. <fis ais cis>4.      | % 37
+    <e ais cis>4. <e ais cis>4.      | % 38
+    <fis a d>4. <fis a d>4.      | % 39
+    <fis a d>4. <fis a d>4.      | % 40
+    <d fis a>4. <d fis a>4.      | % 41
+    <d fis a>4. <d fis a>4.      | % 42
+    <fis a d>4. <fis a d>4.      | % 43
+    <fis a d>4. <fis a d>4.      | % 44
+    <fis ais cis>4. <fis ais cis>4.      | % 45
+    <e ais cis>4. <e ais cis>4.      | % 46
+    <fis a d>4. <fis a d>4. } % end of repeat except alternate endings
+    \alternative{ {       | % 47
+    <fis a d>4. <fis a d>4. \> } %close alt1
+     | % 48
+    r4 \! \arpeggioNormal <fis a d>2\arpeggio ~     {          | % 49
+    <fis a d>2. } } %close alternatives
+     | % 50
+    r4 <fis a d>2~     \repeat volta 2 { %startrep 
+     | % 51
+    <fis a d>2. 
+    \once\override Score.RehearsalMark #'self-alignment-X = #RIGHT 
+      \mark "Da capo"       | % 52
+    %barkeysig: 
+    \key c \major 
+    r2.      | % 53
+    r2.      | % 54
+    r2.      | % 55
+    r2.      | % 56
+    \clef "bass_8"
+    <d,,, d'>2.~      | % 57
+    <d d'>2.~      | % 58
+    <d d'>2.      | % 59
+    r2.      | % 60
+    \clef treble
+    <d''' f a>4. \mp <d f a>4.      | % 61
+    <d f a>4. <d f a>4.      | % 62
+    <cis f a>4. <cis f a>4.      | % 63
+    <cis f a>4. <cis f a>4.      | % 64
+    <d g bes>4. <d g bes>4.      | % 65
+    <d g bes>4. <d g bes>4.      | % 66
+    <ees g bes>4. <ees g bes>4.      | % 67
+    <ees g bes>4. <ees g bes>4.      | % 68
+    <c e g>4. <c e g>4.      | % 69
+    <c e g>4. <c e g>4.      | % 70
+    <cis e a>4. <cis e a>4.      | % 71
+    <cis e g>4. <cis e g>4.      | % 72
+    <d f a>4. <d f a>4.      | % 73
+    <d f a>4. <d f a>4.      | % 74
+    <d f a>4. <d f a>4.      | % 75
+    <d f a>4. <d f a>4.      | % 76
+    r2.      | % 77
+    r2.      | % 78
+    r2.      | % 79
+    r2.      | % 80
+    \clef "bass_8"
+    <d,,, d'>2.~      | % 81
+    <d d'>2.~      | % 82
+    <d d'>2.      | % 83
+    r2.      | % 84
+    r2.      | % 85
+    r2.      | % 86
+    r2.      | % 87
+    r2.      | % 88
+    <d d'>2.~      | % 89
+    <d d'>2.~      | % 90
+    <d d'>2. \> \bar "|."     | % 91
+    r2. \! \bar "|." 
+}% end of last bar in partorvoice
+
+ 
+
+AvoiceBA = \relative c{
+    \set Staff.instrumentName = #""
+    \set Staff.shortInstrumentName = #""
+    \clef bass
+    %staffkeysig
+    \key c \major 
+    \repeat volta 2 { 
+    %bartimesig: 
+    \time 6/8 
+    f8( \p a) f( a) f( a)      | % 1
+    f( a) f( a) f( a)      | % 2
+    f( a) f( a) f( a)      | % 3
+    f( a) f( a) f( a)      | % 4
+    f( a) f( a) f( a)      | % 5
+    f( a) f( a) f( a)      | % 6
+    f( a) f( a) f( a) } % end of repeat (both)
+    \repeat volta 2 { % bothrep 
+     | % 7
+    f8( a) f( a) f( a)      | % 8
+    f( \mf a) f( a) f( a)      | % 9
+    f( a) f( a) f( a)      | % 10
+    f( a) f( a) f( a)      | % 11
+    f( a) f( a) f( a)      | % 12
+    d,( g) d( g) d( g)      | % 13
+    d( g) d( g) d( g)      | % 14
+    ees( g) ees( g) ees( g)      | % 15
+    ees( g) ees( g) ees( g)      | % 16
+    e( g) e( g) e( g)      | % 17
+    e( g) e( g) e( g)      | % 18
+    e( a) e( a) e( a)      | % 19
+    e( a) e( a) e( a)      | % 20
+    f( a) f( a) f( a)      | % 21
+    f( a) f( a) f( a)      | % 22
+    f( a) f( a) f( a) } % end of repeat (both)
+    \repeat volta 2 { % bothrep 
+    \repeat volta 2 { %startrep 
+     | % 23
+    f8( a) f( a) f( a)      | % 24
+    f( \p a) f( a) f( a)      | % 25
+    f( a) f( a) f( a)      | % 26
+    f( a) f( a) f( a)      | % 27
+    f( a) f( a) f( a)      | % 28
+    f( a) f( a) f( a) } % end of repeat except alternate endings
+    \alternative{ {       | % 29
+    f8( a) f( a) f( a) } %close alt1
+     | % 30
+    f8( a) f( a) f( a)     {          | % 31
+    f8( a) f( a) f( a) } } %close alternatives
+     | % 32
+    f8( a) f( a) f( a) 
+    \bar "||"    \repeat volta 2 { %startrep 
+     | % 33
+    f8( a) f( a) f( a)      | % 34
+    %barkeysig: 
+    \key d \major 
+    fis8( \mf a) fis( a) fis( a)      | % 35
+    fis( a) fis( a) fis( a)      | % 36
+    fis( ais) fis( ais) fis( ais)      | % 37
+    fis( ais) fis( ais) fis( ais)      | % 38
+    fis( a) fis( a) fis( a)      | % 39
+    fis( a) fis( a) fis( a)      | % 40
+    fis( a) fis( a) fis( a)      | % 41
+    fis( a) fis( a) fis( a)      | % 42
+    fis( a) fis( a) fis( a)      | % 43
+    fis( a) fis( a) fis( a)      | % 44
+    fis( ais) fis( ais) fis( ais)      | % 45
+    fis( ais) fis( ais) fis( ais)      | % 46
+    fis( a) fis( a) fis( a) } % end of repeat except alternate endings
+    \alternative{ {       | % 47
+    fis8( a) fis( a) \> fis( a) } %close alt1
+     | % 48
+    fis8( \! a) fis( a) fis( a)     {          | % 49
+    fis8( a) fis( a) fis( a) } } %close alternatives
+     | % 50
+    fis8( a) fis( a) fis( a)     \repeat volta 2 { %startrep 
+     | % 51
+    fis8( a) fis( a) fis( a)      | % 52
+    %barkeysig: 
+    \key c \major 
+    f8( \p a) f( a) f( a)      | % 53
+    f( a) f( a) f( a)      | % 54
+    f( a) f( a) f( a)      | % 55
+    f( a) f( a) f( a)      | % 56
+    f( a) f( a) f( a)      | % 57
+    f( a) f( a) f( a)      | % 58
+    f( a) f( a) f( a)      | % 59
+    f( a) f( a) f( a)      | % 60
+    f( \mp a) f( a) f( a)      | % 61
+    f( a) f( a) f( a)      | % 62
+    f( a) f( a) f( a)      | % 63
+    f( a) f( a) f( a)      | % 64
+    d,( g) d( g) d( g)      | % 65
+    d( g) d( g) d( g)      | % 66
+    ees( g) ees( g) ees( g)      | % 67
+    ees( g) ees( g) ees( g)      | % 68
+    e( g) e( g) e( g)      | % 69
+    e( g) e( g) e( g)      | % 70
+    e( a) e( a) e( a)      | % 71
+    e( a) e( a) e( a)      | % 72
+    f( a) f( a) f( a)      | % 73
+    f( a) f( a) f( a)      | % 74
+    f( a) f( a) f( a)      | % 75
+    f( a) f( a) f( a)      | % 76
+    f( \p a) f( a) f( a)      | % 77
+    f( a) f( a) f( a)      | % 78
+    f( a) f( a) f( a)      | % 79
+    f( a) f( a) f( a)      | % 80
+    f( a) f( a) f( a)      | % 81
+    f( a) f( a) f( a)      | % 82
+    f( a) f( a) f( a)      | % 83
+    f( a) f( a) f( a)      | % 84
+    f( \p a) f( a) f( a)      | % 85
+    f( a) f( a) f( a)      | % 86
+    f( a) f( a) f( a)      | % 87
+    f( a) f( a) f( a)      | % 88
+    f( a) f( a) f( a)      | % 89
+    f( a) f( a) f( a)      | % 90
+    f( \> a) f( a) f( a) \bar "|."     | % 91
+    f8( \! a) f( a) f( a) \bar "|." 
+}% end of last bar in partorvoice
+
+ 
+AvoiceBB = \relative c{
+        \repeat volta 2 { 
+    d4 d d      | % 1
+    d d d      | % 2
+    d d d      | % 3
+    d d d      | % 4
+    d d d      | % 5
+    d d d      | % 6
+    d d d } % end of repeat (both)
+    \repeat volta 2 { % bothrep 
+     | % 7
+    d4 d d      | % 8
+    d d d      | % 9
+    d d d      | % 10
+    cis cis cis      | % 11
+    cis cis cis      | % 12
+    bes bes bes      | % 13
+    bes bes bes      | % 14
+    bes bes bes      | % 15
+    bes bes bes      | % 16
+    c c c      | % 17
+    c c c      | % 18
+    a a a      | % 19
+    a a a      | % 20
+    d d d      | % 21
+    d d d      | % 22
+    d d d } % end of repeat (both)
+    \repeat volta 2 { % bothrep 
+    \repeat volta 2 { %startrep 
+     | % 23
+    d4 d d      | % 24
+    d d d      | % 25
+    d d d      | % 26
+    d d d      | % 27
+    d d d      | % 28
+    d d d } % end of repeat except alternate endings
+    \alternative{ {       | % 29
+    d4 d d } %close alt1
+     | % 30
+    d4 d d     {          | % 31
+    d4 d d } } %close alternatives
+     | % 32
+    d4 d d 
+    \bar "||"    \repeat volta 2 { %startrep 
+     | % 33
+    d4 d d      | % 34
+    d d d      | % 35
+    d d d      | % 36
+    cis cis cis      | % 37
+    cis cis cis      | % 38
+    d d d      | % 39
+    d d d      | % 40
+    d d d      | % 41
+    d d d      | % 42
+    d d d      | % 43
+    d d d      | % 44
+    cis cis cis      | % 45
+    cis cis cis      | % 46
+    d d d } % end of repeat except alternate endings
+    \alternative{ {       | % 47
+    d4 d d } %close alt1
+     | % 48
+    d4 d d     {          | % 49
+    d4 d d } } %close alternatives
+     | % 50
+    d4 d d     \repeat volta 2 { %startrep 
+     | % 51
+    d4 d d      | % 52
+    d d d      | % 53
+    d d d      | % 54
+    d d d      | % 55
+    d d d      | % 56
+    d d d      | % 57
+    d d d      | % 58
+    d d d      | % 59
+    d d d      | % 60
+    d d d      | % 61
+    d d d      | % 62
+    cis cis cis      | % 63
+    cis cis cis      | % 64
+    bes bes bes      | % 65
+    bes bes bes      | % 66
+    bes bes bes      | % 67
+    bes bes bes      | % 68
+    c c c      | % 69
+    c c c      | % 70
+    a a a      | % 71
+    a a a      | % 72
+    d d d      | % 73
+    d d d      | % 74
+    d d d      | % 75
+    d d d      | % 76
+    d d d      | % 77
+    d d d      | % 78
+    d d d      | % 79
+    d d d      | % 80
+    d d d      | % 81
+    d d d      | % 82
+    d d d      | % 83
+    d d d      | % 84
+    d d d      | % 85
+    d d d      | % 86
+    d d d      | % 87
+    d d d      | % 88
+    d d d      | % 89
+    d d d      | % 90
+    d d d \bar "|."     | % 91
+    d4 d d \bar "|." 
+}% end of last bar in partorvoice
